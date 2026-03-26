@@ -14,23 +14,40 @@
         // 프로그램 종료
         // alert('종료')
 
-        const date = new Date()
+        // const date = new Date()
         // console.log(date.getFullYear())
-        const hour = date.getHours()
-        if (hour < 11) { 
-            alert('아침 먹을 시간입니다.') 
-        } else if (hour < 15) {
-            alert('점심 먹을 시간입니다.')
+        // const hour = date.getHours()
+        // if (hour < 11) { 
+        //     alert('아침 먹을 시간입니다.') 
+        // } else if (hour < 15) {
+        //     alert('점심 먹을 시간입니다.')
+        // } else {
+
+        //     alert('저녁 먹을 시간입니다.')
+        // }
+
+        // const x = prompt('조건에 맞는 숫자를 입력하세요')
+        // if(x > 10) {
+        //     if( x < 20) {
+        //         console.log('조건에 맞습니다.')
+        //     }
+        // }
+
+        // const a = Number(prompt('숫자를 입력해주세요',''))
+        // if( a > 0) {
+        //     alert(`${a}는 양수입니다.`)
+        // } else if ( a === 0) {
+        //     alert(`${a}는 0입니다.`)
+        // } else {
+        //     alert(`${a}는 음수입니다.`)
+        // }
+
+        const b = Number(prompt('숫자를 입력해주세요',''))
+        if( b % 2 === 0) {
+            alert(`${b}는 짝수입니다.`)
         } else {
-
-            alert('저녁 먹을 시간입니다.')
-        }
-
-        const x = prompt('조건에 맞는 숫자를 입력하세요')
-        if(x > 10) {
-            if( x < 20) {
-                console.log('조건에 맞습니다.')
-            }
+            alert(`${b}는 홀수입니다.`)
+            
         }
         
 
