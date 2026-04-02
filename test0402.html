@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        const todos = ['우유 구매', '업무 메일 확인하기', '필라테스 수업'];
+        console.log(todos);
+
+        todos.push('저녁 식사 준비하기');
+        todos.push('피아노 연습하기');
+
+        console.log(todos);
+
+        const fruitsA = ['사과', '배', '바나나']
+        console.log(fruitsA);
+        fruitsA[10] = '귤';
+        console.log(fruitsA);
+
+        const fruitsB = ['사과', '배', '바나나'];
+        fruitsB[fruitsB.length] = '귤';
+        console.log(fruitsB);
+
+        const itemsA = ['사과', '배', '바나나'];
+        console.log(itemsA);
+        itemsA.splice(2,1);
+        console.log(itemsA);
+        itemsA.push('바나나');
+        console.log(itemsA);
+        itemsA.push('귤');
+        console.log(itemsA);
+
+        itemsA.splice(itemsA.length-1,1);
+        console.log(itemsA);
+
+    </script>
+</body>
+</html>
