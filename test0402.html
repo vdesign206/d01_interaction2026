@@ -6,7 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-
+    <h1></h1>
+    <h2 class="pyramid1"></h2>
+    <h2 class="pyramid2"></h2>
 
     <script>
         const todos = ['우유 구매', '업무 메일 확인하기', '필라테스 수업'];
@@ -117,17 +119,55 @@
 
         // }
 
+        // 1부터 30까지 짝수의 합
 
+        // let output2 = 0
+        // for (let i = 1; i<=10; i++) {
+        //     if(i % 2 === 1) {
+        //         continue;
+        //     }
+        //     output2 += i;
+        // }
+        // alert(output2)
 
+        //중첩반복문
+        let output3 ='';
 
+        for (let i = 1; i<10; i++) {
 
+            for (let j = 0; j < i; j++) {
+                output3 += '*'
+            }
+            output3 += '<br>'
+        }
+        console.log(output3)
+        document.querySelector('h1').innerHTML = output3;
 
+        let output4 = '';
+        for (let i = 1 ; i<15; i++) {
+            for (let j = 15; j > i; j--) {
+                output4 += '&nbsp; '
+            }
 
+            for (let k = 0; k < 2 * i - 1; k++){
+                output4 += '*'
+            }
+            output4 += '<br>'
 
+        }
+        document.querySelector('.pyramid1').innerHTML = output4;
 
-
-
-
+        let output5 = '';
+        for (let i = 14 ; i > 0; i--) {
+            for (let j = 15; j > i; j--) {
+                output5 += '&nbsp; '
+            }
+            for (let k = 0; k < 2 * i - 1; k++){
+                output5 += '*'
+            }
+            output5 += '<br>'
+        }
+        document.querySelector('.pyramid2').innerHTML = output5;
 
 
 
