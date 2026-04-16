@@ -4,14 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 2000px;
+        }
+        section {
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+        }
+        section:nth-child(odd) {
+            background-color: rgb(233, 249, 255);
+        }
+        .wrapper {
+            padding-top: 88px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1 {
+            
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="btns">
+        <div class="container">
+            <div class="btns__menu">
+                <button class="btn home">Home</button>
+                <button class="btn about">about</button>
+                <button class="btn skills">skills</button>
+                <button class="btn works">works</button>
+                <button class="btn contact">contact</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="home">
+        <div class="wrapper">
+            <h1>Home</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum necessitatibus. Facilis libero rem debitis ab beatae possimus esse eius, perspiciatis perferendis modi sapiente fuga nobis vitae, laudantium illo fugit?</h3>
+        </div>
+    </section>
+    <section id="about">
+        <div class="wrapper">
+            <h1>About</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum necessitatibus. Facilis libero rem debitis ab beatae possimus esse eius, perspiciatis perferendis modi sapiente fuga nobis vitae, laudantium illo fugit?</h3>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="wrapper">
+            <h1>skills</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum necessitatibus. Facilis libero rem debitis ab beatae possimus esse eius, perspiciatis perferendis modi sapiente fuga nobis vitae, laudantium illo fugit?</h3>
+        </div>
+    </section>
+    <section id="works">
+        <div class="wrapper">
+            <h1>works</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum necessitatibus. Facilis libero rem debitis ab beatae possimus esse eius, perspiciatis perferendis modi sapiente fuga nobis vitae, laudantium illo fugit?</h3>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="wrapper">
+            <h1>contact</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum necessitatibus. Facilis libero rem debitis ab beatae possimus esse eius, perspiciatis perferendis modi sapiente fuga nobis vitae, laudantium illo fugit?</h3>
+        </div>
+    </section>
     <script>
-        document.body.innerHTML = "<h1>안녕하세요!</h1>";
-        // alert("반갑습니다.");
-        console.log("안녕하세요"[1].length);
+        
     </script>
-    <!-- 주석처리 -->
+
 </body>
 </html>

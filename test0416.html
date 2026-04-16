@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const 함수 = function () {
+            console.log('함수 내부의 코드입니다...1')
+            console.log('함수 내부의 코드입니다...2')
+            console.log('함수 내부의 코드입니다...3')
+            console.log('')
+        }
+
+        함수()
+        함수()
+
+        function 함수이름() {
+            
+        }
+
+        console.log(typeof 함수)
+        console.log(함수)
+        console.log(alert)
+        console.log(prompt)
+
+        function f(x) {
+            return x*x;
+        }
+        console.log(f(4))
+
+        function isLeapYear(year) {
+            return (year % 4 === 0) && (year % 100 !==0) || (year%400 ===0)
+        }
+
+        console.log(`2024년은 윤년일까? === ${isLeapYear(2024)}`)
+        console.log(`2010년은 윤년일까? === ${isLeapYear(2010)}`)
+        console.log(`2000년은 윤년일까? === ${isLeapYear(2000)}`)
+        console.log(`1900년은 윤년일까? === ${isLeapYear(1900)}`)
+
+        // a 부터 b까지 더하는 함수 만들기
+
+        function sumAtoB (a, b) {
+            let output = 0;
+            for (let i = a; i <= b; i++) {
+                output += i;
+            }
+            return output;
+        }
+
+        console.log(`1부터 100까지의 합: ${sumAtoB(1,100)}`)
+        console.log(`1부터 500까지의 합: ${sumAtoB(1,500)}`)
+    // 최소값 구하기
+        function min(array) {
+            let output = array[0];
+
+            for (const item of array) {
+                if(output > item) {
+                    output = item;
+                }
+                console.log(`for문의 item값은 ${item}`);
+            }
+
+            return output;
+        }
+
+        const testArray = [52, 273, 32, 103, 275, 24, 57]
+        console.log(`${testArray} 중에서`);
+        console.log(`최소값 = ${min(testArray)}`)
+
+        // 최대값 구하기 for 반복문 이용 
+        function max(array) {
+            let output = array[0];
+
+            // for (const item of array) {
+            //     if(output < item) {
+            //         output = item;
+            //     }
+            //     console.log(`for문의 item값은 ${item}`);
+            // }
+            for (let i = 0 ; i < array.length; i++) {
+                if(output < array[i]) {
+                    output = array[i];
+                }
+            }
+
+            return output;
+        }
+
+        const testArray2 = [52, 273, 32, 103, 275, 24, 57]
+        console.log(`${testArray2} 중에서`);
+        console.log(`최대값 = ${max(testArray2)}`)
+
+    </script>
+</body>
+</html>
