@@ -82,7 +82,7 @@
             color: white;
             background-color: skyblue;
             border-radius: 50%;
-            opacity: .5;
+            opacity: 0;
             transition: opacity .3s;
         }
         .arrow-up span {
@@ -146,8 +146,17 @@ arrow_upward
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum necessitatibus. Facilis libero rem debitis ab beatae possimus esse eius, perspiciatis perferendis modi sapiente fuga nobis vitae, laudantium illo fugit?</h3>
         </div>
     </section>
+
     <script>
-        
+        const arrowUp = document.querySelector('.arrow-up');
+        document.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                arrowUp.classList.add('show');
+            } else {
+                arrowUp.classList.remove('show');
+            }
+            console.log(window.scrollY)
+        })
     </script>
 
 </body>
