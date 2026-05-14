@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <style>
+        .box {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            margin-top: 100px;
+
+        }
+        .orange {
+            background-color: orange;
+        }
+        .gray {
+            background-color: gray;
+        }
+        .green {
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box orange"></div>
+    <div class="box gray"></div>
+    <div class="box green"></div>
+
+    <script>
+        const aniDuration = 3;
+        gsap.to(".box", {duration: aniDuration, x:300, y:300, ease:  "bounce.out"})
+        gsap.to(".orange", {duration: 1, rotation:360, repeat:-1,})
+        gsap.to(".gray", {duration: 1, rotation:360, repeat:-1, ease: "none"})
+        gsap.to(".green", {duration: 1, rotation:360, repeat:-1, })
+    </script>
+    
+</body>
+</html>
