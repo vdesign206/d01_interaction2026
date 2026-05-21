@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <style>
         .visual {
             background-image: url(./fadeimg/visual_bg.jpg);
@@ -41,10 +42,13 @@
             top: 150px;
             right: 250px;
         }
-        .visual .pspoon {
+        .visual .spoon {
             position: absolute;
             bottom: 0;
             left: 275px;
+        }
+        .visual .fade-in {
+            opacity: 0;
         }
     </style>
 </head>
@@ -68,6 +72,16 @@
             </div>
         </div>
     </section>
+    <script>
+        const fadeEls = document.querySelectorAll('.visual .fade-in');
+        fadeEls.forEach(function (fadeEl, index){
+            gsap.to(fadeEl, 1, {
+                delay: (index + 1) * 0.7,
+                opacity: 1
+            })
+
+        })
+    </script>
     
 </body>
 </html>
